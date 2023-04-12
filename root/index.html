@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Rubik's cube scrambler</title>
+    </head>
+    <body>
+        <div id="scramble"></div>
+        <div class="scramble-container">
+            <div class="whole">
+                <div class="user-input-outer">
+                    <div id="wrong-scramble"></div>
+                    <div class="user-input">
+                        <input
+                            id="input-scramble"
+                            class="text-box"
+                            type="text"
+                            placeholder="Enter the scramble here"
+                            >
+                            <div style="display: flex; margin-left: 5px;
+                            margin-right: 15px; align-items: center; justify-content: center;">
+                                <div>
+                                    <input type="checkbox" id="orient">
+                                </div>
+                                <div>
+                                    Orient
+                                </div>
+                            </div>
+                            <button id="input-scramble-button" class="button">click here</button>
+                    </div>
+                </div>
+                <div class="layer1">
+                    <div class="face">
+                        <div class="row">
+                            <div id="element1" class="each-cell white"></div>
+                            <div id="element2" class="each-cell white"></div>
+                            <div id="element3" class="each-cell white"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element4" class="each-cell white"></div>
+                            <div id="element5" class="each-cell white"></div>
+                            <div id="element6" class="each-cell white"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element7" class="each-cell white"></div>
+                            <div id="element8" class="each-cell white"></div>
+                            <div id="element9" class="each-cell white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer2">
+                    <div class="face">
+                        <div class="row">
+                            <div id="element10" class="each-cell orange"></div>
+                            <div id="element11" class="each-cell orange"></div>
+                            <div id="element12" class="each-cell orange"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element13" class="each-cell orange"></div>
+                            <div id="element14" class="each-cell orange"></div>
+                            <div id="element15" class="each-cell orange"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element16" class="each-cell orange"></div>
+                            <div id="element17" class="each-cell orange"></div>
+                            <div id="element18" class="each-cell orange"></div>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="row">
+                            <div id="element19" class="each-cell green"></div>
+                            <div id="element20" class="each-cell green"></div>
+                            <div id="element21" class="each-cell green"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element22" class="each-cell green"></div>
+                            <div id="element23" class="each-cell green"></div>
+                            <div id="element24" class="each-cell green"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element25" class="each-cell green"></div>
+                            <div id="element26" class="each-cell green"></div>
+                            <div id="element27" class="each-cell green"></div>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="row">
+                            <div id="element28" class="each-cell red"></div>
+                            <div id="element29" class="each-cell red"></div>
+                            <div id="element30" class="each-cell red"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element31" class="each-cell red"></div>
+                            <div id="element32" class="each-cell red"></div>
+                            <div id="element33" class="each-cell red"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element34" class="each-cell red"></div>
+                            <div id="element35" class="each-cell red"></div>
+                            <div id="element36" class="each-cell red"></div>
+                        </div>
+                    </div>
+                    <div class="face">
+                        <div class="row">
+                            <div id="element37" class="each-cell blue"></div>
+                            <div id="element38" class="each-cell blue"></div>
+                            <div id="element39" class="each-cell blue"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element40" class="each-cell blue"></div>
+                            <div id="element41" class="each-cell blue"></div>
+                            <div id="element42" class="each-cell blue"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element43" class="each-cell blue"></div>
+                            <div id="element44" class="each-cell blue"></div>
+                            <div id="element45" class="each-cell blue"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="layer3">
+                    <div class="face">
+                        <div class="row">
+                            <div id="element46" class="each-cell yellow"></div>
+                            <div id="element47" class="each-cell yellow"></div>
+                            <div id="element48" class="each-cell yellow"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element49" class="each-cell yellow"></div>
+                            <div id="element50" class="each-cell yellow"></div>
+                            <div id="element51" class="each-cell yellow"></div>
+                        </div>
+                        <div class="row">
+                            <div id="element52" class="each-cell yellow"></div>
+                            <div id="element53" class="each-cell yellow"></div>
+                            <div id="element54" class="each-cell yellow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="Scramble.js"></script>
+    </body>
+</html>
